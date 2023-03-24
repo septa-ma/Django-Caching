@@ -63,16 +63,16 @@
     - LOCATION should contain the absolute directory path. Django searches from the root of your file-system.
 
 # 4- Setting Up Cache in local-memory:
-    - it is very powerful and robust.
-    - this system can handle multi-threaded processes and is efficient.
-    - it is best for those projects which cannot use Memcached framework.
-    - add this to settings.py
-        - CACHES = {
-            - 'default': {
-                - 'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-                - 'LOCATION': 'DataFlair',
-            - }
+- it is very powerful and robust.
+- this system can handle multi-threaded processes and is efficient.
+- it is best for those projects which cannot use Memcached framework.
+- add this to settings.py
+    - CACHES = {
+        - 'default': {
+            - 'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+            - 'LOCATION': 'DataFlair',
         - }
+    - }
 
 # C) Django Caching Levels:
 
