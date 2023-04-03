@@ -12,8 +12,8 @@ def cached_example(request):
         json = cache.get('sample')
         return JsonResponse(json, safe=False)
     else:
-        objs = Product.objects.all()
-        json = serializers.serialize('json', objs)
+        product_objects = Product.objects.all()
+        json = serializers.serialize('json', product_objects)
         # store data in cache
         cache.set('sample', json, timeout=CACHE_TTL)
         return JsonResponse(json, safe=False)
