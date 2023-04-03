@@ -128,8 +128,10 @@
 - Django's low-level cache is good when you need more granularity and control over the cache. It can store any object that can be pickled safely.
 - To use the low-level cache, you can use either the built-in django.core.cache.caches or, if you just want to use the default cache defined in the settings.py file, via django.core.cache.cache.
 
-**Cache Backend:**
-- Download and install Redis.
+**Cache Backend With Redis:**
+- Install redis and django-Redis:
+    - sudo apt-get install redis-server
+    - pip install django-redis
 - after that in a new terminal window start the Redis server (enter this command on terminal -> redis-server) and make sure that it's running on its default port, 6379.
 - For Django to use Redis as a cache backend, the django-redis dependency is required. add the custom backend to the settings.py file:
     - CACHES = {
