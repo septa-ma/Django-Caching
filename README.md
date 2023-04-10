@@ -116,6 +116,7 @@
 - **Memcached and Redis** are in-memory, key-value data stores. They are easy to use and optimized for high-performance lookups. You probably won't see much difference in performance or memory usage between the two. 
 - **Memcached** is slightly easier to configure since it's designed for simplicity and ease of use.
 - **Redis** has a richer set of features so it has a wide range of use cases beyond caching. For example, it's often used to store user sessions or as message broker in a pub/sub system. Because of its flexibility Redis is much better solution.
+    - Redis can function as a database, a cache, and a message broker. 
 
 # 3- Low-level cache API:
 - for this caching level we can use Redis.
